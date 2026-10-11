@@ -2,6 +2,7 @@
 /*
 !/.gitignore
 !/render.yaml
+!/README.md
 !/public/
 !/docs-src/
 public/*.bak

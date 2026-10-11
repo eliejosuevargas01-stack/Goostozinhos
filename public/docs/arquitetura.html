@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arquitetura · Docs Goostozinhos</title>
+<meta name="description" content="Componentes, fluxos de dados e diagramas.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/docs.css">
+<script src="assets/mermaid.min.js" defer></script><script src="assets/docs.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top">
+  <button type="button" class="menu" aria-controls="side" aria-expanded="false" aria-label="Abrir menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="" width="32" height="32"><span>Goostozinhos <b>Docs</b></span></a>
+  <span class="pill pill-green"><i class="dot"></i>Em produção</span>
+  <a class="top-link" href="../">Ver a landing</a>
+</header>
+<div class="layout">
+<nav id="side" class="side" aria-label="Documentação"><ul><li><a href="index.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>Início</a></li></ul><p class="nav-label">Começar</p><ul><li><a href="visao-geral.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Visão geral</a></li><li><a href="como-funciona.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Como funciona</a></li></ul><p class="nav-label">Sistema</p><ul><li><a href="arquitetura.html" aria-current="page"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4M17.5 10v4"/></svg>Arquitetura</a></li><li><a href="funcionalidades.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Funcionalidades</a></li><li><a href="modelo-de-dados.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg>Modelo de dados</a></li></ul><p class="nav-label">Referência</p><ul><li><a href="referencia-api.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Referência de API</a></li><li><a href="glossario.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>Glossário</a></li></ul><p class="nav-label">Operar</p><ul><li><a href="operacao.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Operação</a></li><li><a href="qualidade-seguranca.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Qualidade e segurança</a></li></ul><p class="nav-label">Contexto</p><ul><li><a href="decisoes-tecnicas.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>Decisões técnicas</a></li><li><a href="changelog.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Changelog</a></li></ul></nav>
+<main id="main" class="main" tabindex="-1">
+<article class="doc">
+<nav class="crumbs" aria-label="Trilha"><a href="index.html">Docs</a><span>/</span>Sistema<span>/</span><span aria-current="page">Arquitetura</span></nav>
+<h1>Arquitetura</h1><p class="lead">Componentes, fluxos de dados e diagramas.</p><h2 id="componentes"><a class="anchor" href="#componentes">Componentes</a></h2>
+<div class="table"><table><thead><tr><th>Componente</th><th>Papel</th><th>Onde vive</th></tr></thead><tbody><tr><td>Landing estática</td><td>3 passos, máscara de telefone, raspadinha, cópia de cupom, espera de 45 s</td><td><code>public/</code> (HTML, CSS, dois scripts)</td></tr><tr><td>Raspadinha</td><td>Canvas com foil dourado, limiar de 40%, botão alternativo</td><td><code>public/scratchcard.js</code></td></tr><tr><td>Fluxo de resgate</td><td>Valida dados, decide entrega, registra cliente, reivindica envio, chama WhatsApp</td><td>Automação n8n, exportada em <code>workflows/resgate-entrega-cupom.json</code></td></tr><tr><td>Fluxo de importação</td><td>Recebe um cupom por chamada, valida formato, impede duplicata e campanha dupla</td><td>Automação n8n, exportada em <code>workflows/importacao-estoque-cupons.json</code></td></tr><tr><td>Checagem de Instagram</td><td>Normaliza @ e consulta lista de seguidores (fora do resgate)</td><td>Automação n8n, exportada em <code>workflows/validacao-instagram.json</code></td></tr><tr><td>Tabelas de dados</td><td>Estoque de cupons e cadastro de clientes</td><td>Tabelas nativas do n8n (<code>cupons</code>, <code>clientes</code>)</td></tr><tr><td>Gateway de WhatsApp</td><td>Envia a mensagem com o código</td><td>Serviço HTTP externo chamado pelo fluxo de resgate</td></tr><tr><td>Testes</td><td>Contrato, concorrência e proteções de ambiente de teste</td><td><code>tests/</code> (Python e Node, só biblioteca padrão)</td></tr></tbody></table></div>
+<p>O frontend conversa com a automação por um único webhook de resgate. A loja alimenta o estoque pelo webhook de importação. O gateway de WhatsApp só recebe chamadas do fluxo de resgate, nunca do navegador.</p>
+<h2 id="fluxo-de-dados-do-resgate"><a class="anchor" href="#fluxo-de-dados-do-resgate">Fluxo de dados do resgate</a></h2>
+<p>Etapa 1: validação e leitura.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    A[Landing] --&gt;|POST JSON| B(Webhook resgatar-presente)
+    B --&gt; C[Validar e normalizar]
+    C --&gt;|inválido| Z400[400 pedido inválido]
+    C --&gt;|válido| D[Ler cupom ativo]
+    D --&gt; E[Buscar cliente por telefone]
+    D -.-&gt;|falha| Z503[503 erro temporário]
+    E -.-&gt;|falha| Z503
+    E --&gt; F([Decisão])</pre></figure>
+<p>Etapa 2: decisão. Três saídas encerram o pedido; só o novo resgate segue para entrega.</p>
+<figure class="diagram"><pre class="mermaid">flowchart LR
+    F([Decisão]) --&gt;|já recebeu| R1[200 já resgatado]
+    F --&gt;|sem cupom| R2[409 indisponível]
+    F --&gt;|vencido| R3[409 cupom vencido]
+    F --&gt;|novo resgate| G[Etapa 3]</pre></figure>
+<p>Etapa 3: entrega do novo resgate.</p>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    G[Cria cliente + espera 0–5 s] --&gt; H[Reivindica envio]
+    H -.-&gt;|perdeu a disputa| X[Encerra sem resposta]
+    H --&gt;|venceu| I{Teste?}
+    I --&gt;|sim| T[200 entregue sem WhatsApp]
+    I --&gt;|não| J[Envia WhatsApp]
+    J --&gt;|ok| OK[200 entregue]
+    J --&gt;|falha| K[Reverte reivindicação]
+    K --&gt; P[200 pendente + código]</pre></figure>
+<p>Pontos-chave do desenho:</p>
+<ul><li><strong>Leitura antes da decisão.</strong> Cupom ativo e cliente são lidos antes de qualquer escrita.</li><li><strong>Reivindicação condicional.</strong> A marcação de envio só acontece se o registro ainda estiver como não enviado. Duas chamadas simultâneas com o mesmo telefone: uma vence, a outra encerra sem resposta própria.</li><li><strong>Espera aleatória curta.</strong> Antes de reivindicar, o fluxo pausa de 0 a 5 segundos para reduzir colisão entre execuções simultâneas.</li><li><strong>Falha de WhatsApp não perde o cupom.</strong> Se o gateway falhar, a reivindicação é revertida e a resposta traz o código com estado pendente.</li><li><strong>Erros de leitura viram 503.</strong> Falhas nas tabelas respondem erro temporário sem expor dados pessoais.</li></ul>
+<h2 id="fluxo-de-dados-da-importacao"><a class="anchor" href="#fluxo-de-dados-da-importacao">Fluxo de dados da importação</a></h2>
+<figure class="diagram"><pre class="mermaid">flowchart TD
+    A[Loja] --&gt;|POST 1 cupom + segredo no header| B(Webhook importar-cupons com auth)
+    B --&gt; C[Validar formato e data]
+    C --&gt;|inválido| Z400[400 inválido]
+    C --&gt;|válido| D[Código já existe?]
+    D --&gt;|sim| Z409D[409 duplicado]
+    D --&gt;|não| E[Campanha já tem cupom ativo?]
+    E --&gt;|sim| Z409C[409 campanha ocupada]
+    E --&gt;|não| F[Inserir cupom]
+    F --&gt; Z200[200 sucesso]</pre></figure>
+<p>Uma campanha ativa comporta um cupom ativo por vez. Para trocar o cupom, desligue o atual antes de importar o novo <span class="pill pill-amber" title="Afirmação pendente de confirmação">a confirmar</span>.</p>
+<h2 id="estado-publicado-x-arquivos-locais"><a class="anchor" href="#estado-publicado-x-arquivos-locais">Estado publicado x arquivos locais</a></h2>
+<p>Os arquivos em <code>workflows/</code> na raiz são a referência documentada. Cópias sincronizadas do servidor ficam em <code>workflows/remote/</code> com manifesto de versão. Na última sincronização lida, nomes e conexões batiam; divergiam apenas ajustes de retenção de execuções e tempo-limite.</p>
+<nav class="pager" aria-label="Paginação"><a class="prev" href="como-funciona.html"><small>Anterior</small>Como funciona</a><a class="next" href="funcionalidades.html"><small>Próxima</small>Funcionalidades</a></nav>
+</article>
+<aside class="toc" aria-label="Nesta página"><p class="nav-label">Nesta página</p><ul><li class="l2"><a href="#componentes">Componentes</a></li><li class="l2"><a href="#fluxo-de-dados-do-resgate">Fluxo de dados do resgate</a></li><li class="l2"><a href="#fluxo-de-dados-da-importacao">Fluxo de dados da importação</a></li><li class="l2"><a href="#estado-publicado-x-arquivos-locais">Estado publicado x arquivos locais</a></li></ul></aside>
+</main>
+</div>
+</body>
+</html>

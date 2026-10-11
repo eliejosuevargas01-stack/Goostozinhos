@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Operação · Docs Goostozinhos</title>
+<meta name="description" content="Importar cupons, testar, publicar e resolver problemas.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/docs.css">
+<script src="assets/docs.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top">
+  <button type="button" class="menu" aria-controls="side" aria-expanded="false" aria-label="Abrir menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="" width="32" height="32"><span>Goostozinhos <b>Docs</b></span></a>
+  <span class="pill pill-green"><i class="dot"></i>Em produção</span>
+  <a class="top-link" href="../">Ver a landing</a>
+</header>
+<div class="layout">
+<nav id="side" class="side" aria-label="Documentação"><ul><li><a href="index.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>Início</a></li></ul><p class="nav-label">Começar</p><ul><li><a href="visao-geral.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Visão geral</a></li><li><a href="como-funciona.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Como funciona</a></li></ul><p class="nav-label">Sistema</p><ul><li><a href="arquitetura.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4M17.5 10v4"/></svg>Arquitetura</a></li><li><a href="funcionalidades.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Funcionalidades</a></li><li><a href="modelo-de-dados.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg>Modelo de dados</a></li></ul><p class="nav-label">Referência</p><ul><li><a href="referencia-api.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Referência de API</a></li><li><a href="glossario.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>Glossário</a></li></ul><p class="nav-label">Operar</p><ul><li><a href="operacao.html" aria-current="page"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Operação</a></li><li><a href="qualidade-seguranca.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Qualidade e segurança</a></li></ul><p class="nav-label">Contexto</p><ul><li><a href="decisoes-tecnicas.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>Decisões técnicas</a></li><li><a href="changelog.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Changelog</a></li></ul></nav>
+<main id="main" class="main" tabindex="-1">
+<article class="doc">
+<nav class="crumbs" aria-label="Trilha"><a href="index.html">Docs</a><span>/</span>Operar<span>/</span><span aria-current="page">Operação</span></nav>
+<h1>Operação</h1><p class="lead">Importar cupons, testar, publicar e resolver problemas.</p><h2 id="importar-um-cupom"><a class="anchor" href="#importar-um-cupom">Importar um cupom</a></h2>
+<p>Pré-requisito: cupom criado no painel do Parceiro e segredo de importação em mãos (variável de ambiente; nunca no código).</p>
+<ol><li>Desligue o cupom anterior da campanha, se houver (<code>disponivel=false</code> ou remoção conforme seu processo). A importação recusa campanha com cupom ativo.</li><li>Envie exatamente um cupom por chamada:</li></ol>
+<div class="code"><div class="code-head"><span>Terminal</span><button type="button" class="copy">Copiar</button></div><pre><code>curl -X POST "https://&lt;n8n&gt;/webhook/importar-cupons" \
+  -H "Content-Type: application/json" \
+  -H "&lt;NOME-DO-HEADER&gt;: $SEGREDO" \
+  -d '{
+    "cupons": [{
+      "code": "GOOSTO-AMOR10",
+      "campaignId": "campanha-goostozinhos-v1",
+      "status": "novo",
+      "discount_value": "10%",
+      "expiration_date": "2026-11-30",
+      "min_order_value": "30.00",
+      "valid": true,
+      "disponivel": true
+    }]
+  }'</code></pre></div>
+<ol><li>Confira o resultado: <code>200 success</code> inseriu; <code>400 invalid</code> revise formato/data; <code>409 duplicate</code> código já existe; <code>409 campanha_com_cupom_ativo</code> desligue o cupom anterior.</li></ol>
+<p>Segredos vivem em variáveis de ambiente (<code>.env</code> fora de controle de versão). Rotação: cadastre o novo segredo na credencial, confirme chamadas com o novo valor (esperado <code>400</code> com corpo propositalmente inválido) e verifique que o antigo falha com <code>401/403</code>.</p>
+<h2 id="rodar-a-landing-localmente"><a class="anchor" href="#rodar-a-landing-localmente">Rodar a landing localmente</a></h2>
+<div class="code"><div class="code-head"><span>Terminal</span><button type="button" class="copy">Copiar</button></div><pre><code>python3 -m http.server 8000 -d public</code></pre></div>
+<p>Abra <code>http://localhost:8000</code> e use o modo responsivo do navegador. Para apontar a landing para outro webhook em teste, sobrescreva a configuração global no console antes de interagir (a landing aceita objeto de configuração custom) <span class="pill pill-amber" title="mecanismo de sobrescrita existe no código; documentar forma exata após revisão">a confirmar</span>.</p>
+<h2 id="rodar-os-testes"><a class="anchor" href="#rodar-os-testes">Rodar os testes</a></h2>
+<p>Biblioteca padrão apenas, sem instalação:</p>
+<div class="code"><div class="code-head"><span>Terminal</span><button type="button" class="copy">Copiar</button></div><pre><code>python3 -m unittest tests.test_contracts
+python3 -m unittest tests.test_resgate_flow_contract
+node tests/frontend-contract.test.js
+node tests/frontend-shared-coupon.test.js
+node tests/frontend-landing-hardening.test.js
+node tests/shared_coupon_check.js
+node tests/shared_coupon_workflow.test.js
+python3 -m unittest tests.test_n8n_test_guards</code></pre></div>
+<p>Testes ponta a ponta contra a automação real são opt-in: por padrão só planejam e não tocam rede. Para executar de verdade, autorize escrita em campanhas de teste, informe o identificador do fluxo e um identificador de execução de 32 dígitos hexadecimais. Eles criam campanhas exclusivamente com o prefixo <code>test-</code>, nunca enviam WhatsApp fora do número de teste autorizado e apagam tudo ao final, com verificação de que nada fora do escopo mudou.</p>
+<h2 id="publicar-uma-alteracao-de-fluxo"><a class="anchor" href="#publicar-uma-alteracao-de-fluxo">Publicar uma alteração de fluxo</a></h2>
+<ol><li>Edite o fluxo no editor da automação.</li><li>Publique/ative a versão no próprio editor.</li><li>Sincronize o estado do servidor para os arquivos locais com o script de sincronização (remoto para local; nunca o contrário). O manifesto registra versão, data e soma de verificação.</li><li>Rode os testes de contrato locais.</li></ol>
+<p>Arquivos sincronizados do servidor podem conter segredos embutidos: mantenha a pasta restrita e fora de controle de versão sem revisão.</p>
+<h2 id="resolver-problemas"><a class="anchor" href="#resolver-problemas">Resolver problemas</a></h2>
+<div class="table"><table><thead><tr><th>Sintoma</th><th>Causa provável</th><th>Ação</th></tr></thead><tbody><tr><td>Cliente vê “cupons esgotados”</td><td>Campanha sem cupom <code>novo</code> ou com <code>disponivel=false</code></td><td>Importe um cupom novo ou reative o atual</td></tr><tr><td>Cliente vê “campanha encerrada”</td><td><code>expiration_date</code> passou (vale até 23h59 de Brasília)</td><td>Importe cupom com data futura</td></tr><tr><td>Cupom entregue, mas WhatsApp não chegou</td><td>Gateway fora ou lento</td><td>Estado <code>pendente</code> reverte a trava; cliente pode tentar de novo e ver o código</td></tr><tr><td>Reenvio de WhatsApp não ocorre ao repetir</td><td>Idempotência por design</td><td>Novo envio só após falha com reversão; repetição bem-sucedida não reenvia</td></tr><tr><td>Importação responde <code>409 campanha_com_cupom_ativo</code></td><td>Já existe cupom ativo na campanha</td><td>Desligue o atual antes</td></tr><tr><td>Importação responde <code>400</code> com data futura</td><td>Formato ou data real inválida</td><td>Use <code>AAAA-MM-DD</code> futuro; desconto <code>NN%</code>; mínimo <code>NN.NN</code></td></tr><tr><td>Landing não envia nada</td><td>Tempo esgotado (45 s) ou rede</td><td>Mensagem orienta nova tentativa; entrega pode ter ocorrido mesmo assim</td></tr><tr><td>Progresso sumiu após um dia</td><td>Salvamento expira em 24 h</td><td>Comportamento esperado; cliente refaz os passos</td></tr></tbody></table></div>
+<nav class="pager" aria-label="Paginação"><a class="prev" href="glossario.html"><small>Anterior</small>Glossário</a><a class="next" href="qualidade-seguranca.html"><small>Próxima</small>Qualidade e segurança</a></nav>
+</article>
+<aside class="toc" aria-label="Nesta página"><p class="nav-label">Nesta página</p><ul><li class="l2"><a href="#importar-um-cupom">Importar um cupom</a></li><li class="l2"><a href="#rodar-a-landing-localmente">Rodar a landing localmente</a></li><li class="l2"><a href="#rodar-os-testes">Rodar os testes</a></li><li class="l2"><a href="#publicar-uma-alteracao-de-fluxo">Publicar uma alteração de fluxo</a></li><li class="l2"><a href="#resolver-problemas">Resolver problemas</a></li></ul></aside>
+</main>
+</div>
+</body>
+</html>

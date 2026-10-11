@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Referência de API · Docs Goostozinhos</title>
+<meta name="description" content="Webhooks: pedido, respostas e erros.">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/docs.css">
+<script src="assets/docs.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Pular para o conteúdo</a>
+<header class="top">
+  <button type="button" class="menu" aria-controls="side" aria-expanded="false" aria-label="Abrir menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+  <a class="brand" href="index.html"><img src="assets/logo.jpg" alt="" width="32" height="32"><span>Goostozinhos <b>Docs</b></span></a>
+  <span class="pill pill-green"><i class="dot"></i>Em produção</span>
+  <a class="top-link" href="../">Ver a landing</a>
+</header>
+<div class="layout">
+<nav id="side" class="side" aria-label="Documentação"><ul><li><a href="index.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></svg>Início</a></li></ul><p class="nav-label">Começar</p><ul><li><a href="visao-geral.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>Visão geral</a></li><li><a href="como-funciona.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>Como funciona</a></li></ul><p class="nav-label">Sistema</p><ul><li><a href="arquitetura.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4M17.5 10v4"/></svg>Arquitetura</a></li><li><a href="funcionalidades.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>Funcionalidades</a></li><li><a href="modelo-de-dados.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg>Modelo de dados</a></li></ul><p class="nav-label">Referência</p><ul><li><a href="referencia-api.html" aria-current="page"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg>Referência de API</a></li><li><a href="glossario.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>Glossário</a></li></ul><p class="nav-label">Operar</p><ul><li><a href="operacao.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>Operação</a></li><li><a href="qualidade-seguranca.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>Qualidade e segurança</a></li></ul><p class="nav-label">Contexto</p><ul><li><a href="decisoes-tecnicas.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg>Decisões técnicas</a></li><li><a href="changelog.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Changelog</a></li></ul></nav>
+<main id="main" class="main" tabindex="-1">
+<article class="doc">
+<nav class="crumbs" aria-label="Trilha"><a href="index.html">Docs</a><span>/</span>Referência<span>/</span><span aria-current="page">Referência de API</span></nav>
+<h1>Referência de API</h1><p class="lead">Webhooks: pedido, respostas e erros.</p><p>Endereços abaixo usam o placeholder <code>https://&lt;n8n&gt;</code>. Substitua pelo host da sua automação. Todos os webhooks usam <code>POST</code> com corpo JSON.</p>
+<h2 id="resgatar-presente"><a class="anchor" href="#resgatar-presente">Resgatar presente</a></h2>
+<p class="endpoint"><span class="method">POST</span><code>https://&lt;n8n&gt;/webhook/resgatar-presente</code></p>
+<h3 id="resgatar-presente-pedido"><a class="anchor" href="#resgatar-presente-pedido">Pedido</a></h3>
+<div class="code"><div class="code-head"><span>JSON</span><button type="button" class="copy">Copiar</button></div><pre><code>{
+  <span class="k">"campaignId"</span>: <span class="s">"campanha-goostozinhos-v1"</span>,
+  <span class="k">"handleIg"</span>: <span class="s">"cliente_ig"</span>,
+  <span class="k">"name"</span>: <span class="s">"Maria Silva"</span>,
+  <span class="k">"phoneNumber"</span>: <span class="s">"5541999990001"</span>,
+  <span class="k">"reviewDeclared"</span>: <span class="b">true</span>
+}</code></pre></div>
+<div class="table"><table><thead><tr><th>Campo</th><th>Regra</th></tr></thead><tbody><tr><td><code>campaignId</code></td><td>Texto. Ausente usa a campanha padrão.</td></tr><tr><td><code>handleIg</code></td><td>Obrigatório. Aceita com ou sem <code>@</code>; válido com <code>A-Za-z0-9._</code>, 1–30 caracteres. Persistido sem validação.</td></tr><tr><td><code>name</code></td><td>Obrigatório, 2–80 caracteres após aparar espaços.</td></tr><tr><td><code>phoneNumber</code></td><td>Obrigatório. Dígitos com DDD brasileiro válido; <code>55</code> inicial opcional. Servidor normaliza para <code>55DDDNÚMERO</code>.</td></tr><tr><td><code>reviewDeclared</code></td><td>Obrigatório <code>true</code> (confirmação declarada da avaliação).</td></tr></tbody></table></div>
+<h3 id="resgatar-presente-respostas"><a class="anchor" href="#resgatar-presente-respostas">Respostas</a></h3>
+<div class="table"><table><thead><tr><th>HTTP</th><th><code>status</code></th><th>Quando</th><th>Corpo (campos principais)</th></tr></thead><tbody><tr><td>200</td><td><code>entregue</code></td><td>Novo resgate com WhatsApp enviado, ou campanha de teste (com <code>whatsapp: ignorado_teste</code>)</td><td><code>couponCode</code>, <code>code</code>, <code>validade</code>, <code>desconto</code>, <code>pedidoMinimo</code>, <code>whatsapp</code></td></tr><tr><td>200</td><td><code>pendente</code></td><td>Cupom garantido, WhatsApp falhou</td><td>Iguais + <code>whatsapp: falhou</code>, <code>whatsappError.code</code>, mensagem de nova tentativa</td></tr><tr><td>200</td><td><code>ja_resgatado</code></td><td>Telefone já recebeu mensagem antes</td><td><code>couponCode</code>, <code>code</code>, <code>validade</code>, <code>disponivel</code>, <code>vencido</code>, <code>desconto</code>, <code>pedidoMinimo</code></td></tr><tr><td>400</td><td><code>invalid_request</code></td><td>Nome, @, telefone ou confirmação inválidos</td><td><code>error</code> amigável, sem dados pessoais</td></tr><tr><td>409</td><td><code>indisponivel</code></td><td>Sem cupom ativo ou cupom desligado (telefone novo)</td><td><code>error: Cupom indisponível</code></td></tr><tr><td>409</td><td><code>cupom_vencido</code></td><td>Cupom passou da validade (telefone novo)</td><td><code>error: Cupom vencido</code></td></tr><tr><td>503</td><td><code>erro_temporario</code></td><td>Falha de leitura/escrita nas tabelas</td><td><code>code: upstream_unavailable</code>, mensagem de nova tentativa</td></tr></tbody></table></div>
+<p>Exemplo de entregue:</p>
+<div class="code"><div class="code-head"><span>JSON</span><button type="button" class="copy">Copiar</button></div><pre><code>{
+  <span class="k">"status"</span>: <span class="s">"entregue"</span>,
+  <span class="k">"couponCode"</span>: <span class="s">"GOOSTO10"</span>,
+  <span class="k">"code"</span>: <span class="s">"GOOSTO10"</span>,
+  <span class="k">"validade"</span>: <span class="s">"2026-11-30"</span>,
+  <span class="k">"desconto"</span>: <span class="s">"10%"</span>,
+  <span class="k">"pedidoMinimo"</span>: <span class="s">"30.00"</span>,
+  <span class="k">"whatsapp"</span>: <span class="s">"enviado"</span>
+}</code></pre></div>
+<p>Notas:</p>
+<ul><li>Validade usa <code>AAAA-MM-DD</code> e vale até 23h59 de Brasília (UTC−3).</li><li>Respostas 200 de já resgatado refletem o estado atual do cupom (<code>disponivel</code>, <code>vencido</code>); a tela mostra aviso quando indisponível.</li><li>Chamada simultânea duplicada com o mesmo telefone: uma vence; a perdedora encerra sem resposta própria <span class="pill pill-amber" title="comportamento de borda observado nos testes; não inferir timeout do cliente a partir disso">a confirmar</span>.</li><li>Tempo-limite do navegador: 45 s. Tempo-limite de execução no servidor: consulte a Operação.</li></ul>
+<h2 id="importar-cupom"><a class="anchor" href="#importar-cupom">Importar cupom</a></h2>
+<p class="endpoint"><span class="method">POST</span><code>https://&lt;n8n&gt;/webhook/importar-cupons</code></p>
+<p>Cabeçalho de autenticação via credencial configurada no webhook (<code>headerAuth</code>; o nome exato do header vive na credencial, não no export). Guarde o segredo em variável de ambiente, nunca no código.</p>
+<h3 id="importar-cupom-pedido-exatamente-um-cupom"><a class="anchor" href="#importar-cupom-pedido-exatamente-um-cupom">Pedido (exatamente um cupom)</a></h3>
+<div class="code"><div class="code-head"><span>JSON</span><button type="button" class="copy">Copiar</button></div><pre><code>{
+  <span class="k">"cupons"</span>: [
+    {
+      <span class="k">"code"</span>: <span class="s">"GOOSTO-AMOR10"</span>,
+      <span class="k">"campaignId"</span>: <span class="s">"campanha-goostozinhos-v1"</span>,
+      <span class="k">"status"</span>: <span class="s">"novo"</span>,
+      <span class="k">"discount_value"</span>: <span class="s">"10%"</span>,
+      <span class="k">"expiration_date"</span>: <span class="s">"2026-11-30"</span>,
+      <span class="k">"min_order_value"</span>: <span class="s">"30.00"</span>,
+      <span class="k">"valid"</span>: <span class="b">true</span>,
+      <span class="k">"disponivel"</span>: <span class="b">true</span>
+    }
+  ]
+}</code></pre></div>
+<p>Aceita também a chave <code>coupons</code> ou o objeto direto. O código é convertido para maiúsculas. <code>disponivel</code> ausente vale <code>true</code>; qualquer valor não booleano rejeita.</p>
+<h3 id="importar-cupom-respostas"><a class="anchor" href="#importar-cupom-respostas">Respostas</a></h3>
+<div class="table"><table><thead><tr><th>HTTP</th><th><code>status</code></th><th>Quando</th></tr></thead><tbody><tr><td>200</td><td><code>success</code></td><td>Cupom inserido (<code>total: 1</code>)</td></tr><tr><td>400</td><td><code>invalid</code></td><td>Formato inválido, data passada ou mais/menos de um cupom</td></tr><tr><td>401/403</td><td>—</td><td>Segredo ausente ou errado <span class="pill pill-amber" title="códigos exatos dependem do gerenciador de credenciais">a confirmar</span></td></tr><tr><td>409</td><td><code>duplicate</code></td><td>Código já cadastrado</td></tr><tr><td>409</td><td><code>campanha_com_cupom_ativo</code></td><td>Campanha já tem cupom ativo</td></tr></tbody></table></div>
+<h2 id="checagem-de-instagram-fora-do-resgate"><a class="anchor" href="#checagem-de-instagram-fora-do-resgate">Checagem de Instagram (fora do resgate)</a></h2>
+<p class="endpoint"><span class="method">POST</span><code>https://&lt;n8n&gt;/webhook/validar-instagram</code></p>
+<p>Pedido: <code>handleIg</code> (ou <code>handle</code>) e <code>campaignId</code> opcional. Resposta 200 com <code>is_follower</code>, <code>handleIg</code> normalizado e mensagem; 400 quando o @ é inválido ou ausente. Este webhook não é chamado pela landing hoje.</p>
+<nav class="pager" aria-label="Paginação"><a class="prev" href="modelo-de-dados.html"><small>Anterior</small>Modelo de dados</a><a class="next" href="glossario.html"><small>Próxima</small>Glossário</a></nav>
+</article>
+<aside class="toc" aria-label="Nesta página"><p class="nav-label">Nesta página</p><ul><li class="l2"><a href="#resgatar-presente">Resgatar presente</a></li><li class="l3"><a href="#resgatar-presente-pedido">Pedido</a></li><li class="l3"><a href="#resgatar-presente-respostas">Respostas</a></li><li class="l2"><a href="#importar-cupom">Importar cupom</a></li><li class="l3"><a href="#importar-cupom-pedido-exatamente-um-cupom">Pedido (exatamente um cupom)</a></li><li class="l3"><a href="#importar-cupom-respostas">Respostas</a></li><li class="l2"><a href="#checagem-de-instagram-fora-do-resgate">Checagem de Instagram (fora do resgate)</a></li></ul></aside>
+</main>
+</div>
+</body>
+</html>

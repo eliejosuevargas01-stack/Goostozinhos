@@ -1,0 +1,15 @@
+# Repositório PÚBLICO: whitelist. Só entra o que é publicado no Render.
+/*
+!/.gitignore
+!/render.yaml
+!/public/
+!/docs-src/
+public/*.bak
+public/*.step1
+public/draft-*
+public/esfirra-draft.webp
+public/heart-poster.jpg
+public/Red_heart_*.mp4
+__pycache__/
+.env
+.env.*
